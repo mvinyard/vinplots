@@ -3,7 +3,8 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-from ._construct_plot_layout import _construct_plot_layout
+from .._construction._funcs._construct_plot_layout import _construct_plot_layout
+from .._style._funcs._modify_axis_spines import _modify_axis_spines, _modify_all_ax_spines
 
 
 class _Plot:
@@ -55,3 +56,32 @@ class _Plot:
             grid_hspace=self.hspace,
             width_ratios=self.width_ratios,
         )
+        
+    def modify_spines(self,
+                      ax,
+                      color=False,
+                      spines_to_color=False,
+                      spines_to_delete=False,
+                      spines_to_move=False,
+                      spines_positioning="outward",
+                      spines_positioning_amount=0,):
+        
+        """
+        
+        """
+        
+            
+        if ax=="all":
+            mod_func = _modify_all_ax_spines
+            ax=self.AxesDict
+        else:
+            mod_func = _modify_axis_spines
+            
+        mod_func(ax, 
+                 color, 
+                 spines_to_color, 
+                 spines_to_delete,
+                 spines_to_move,
+                 spines_positioning,
+                 spines_positioning_amount,)
+        

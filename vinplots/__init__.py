@@ -1,6 +1,5 @@
 # __init__.py
 
-
 __module_name__ = "__init__.py"
 __author__ = ", ".join(["Michael E. Vinyard"])
 __email__ = ", ".join(["vinyard@g.harvard.edu",])
@@ -8,24 +7,26 @@ __email__ = ", ".join(["vinyard@g.harvard.edu",])
 
 # package imports #
 # --------------- #
-import matplotlib
-import matplotlib.font_manager
-import os
+import matplotlib as _mpl
+import matplotlib.font_manager as _font_manager
+import os as _os
 
 
 # matplotlib rcParams #
 # ------------------- #
 
-
 # clear the previous parameter cache file.
-os.system("rm ~/.cache/matplotlib -rf")
+_os.system("rm ~/.cache/matplotlib -rf")
 
-font = {"size": 12}
-matplotlib.rc(font)
-matplotlib.rcParams["font.sans-serif"] = "Arial"
-matplotlib.rcParams["font.family"] = "sans-serif"
+_font = {"size": 12}
+_mpl.rc(_font)
+_mpl.rcParams["font.sans-serif"] = "Arial"
+_mpl.rcParams["font.family"] = "sans-serif"
 
 
 # import sub-packages #
 # ------------------- #
 from . import _construction as build
+from . import _style as style
+
+from ._plot._PlotModule import _Plot as Plot
