@@ -69,3 +69,10 @@ class _SHAREseq:
         return pd.DataFrame(
             np.stack([self.celltypes, self.colors]), index=["celltype", "color"]
         ).T
+    
+def _SHAREseq_palette():
+    
+    """Returns SHARE-seq color palette."""
+    
+    SHAREseq = _SHAREseq()
+    return SHAREseq.df()['color'].tolist()
