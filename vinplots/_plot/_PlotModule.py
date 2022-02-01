@@ -20,6 +20,7 @@ class _Plot:
         figsize_height=1,
         figsize=False,
         hspace=0.18,
+        wspace=0,
         width_ratios=False,
     ):
 
@@ -33,28 +34,30 @@ class _Plot:
         
         assert nplots >= ncols, print("nplots must be >= ncols")
         
-        self.nplots = nplots
-        self.hspace = hspace
-        self.ncols = ncols
+        self._nplots = nplots
+        self._hspace = hspace
+        self._wspace = wspace
+        self._ncols = ncols
         
         if figsize:
-            self.figsize_width = self.figsize_height = figsize
+            self._figsize_width = self.figsize_height = figsize
         else:
-            self.figsize_width = figsize_width
-            self.figsize_height = figsize_height
+            self._figsize_width = figsize_width
+            self._figsize_height = figsize_height
         
         if width_ratios:
-            self.width_ratios = width_ratios
+            self._width_ratios = width_ratios
         else:
-            self.width_ratios = np.ones(min(self.nplots, self.ncols))
+            self._width_ratios = np.ones(min(self.nplots, self.ncols))
 
         self.fig, self.AxesDict = _construct_plot_layout(
-            nplots=self.nplots,
-            ncols=self.ncols,
-            figsize_width=self.figsize_width,
-            figsize_height=self.figsize_height,
-            grid_hspace=self.hspace,
-            width_ratios=self.width_ratios,
+            nplots=self._nplots,
+            ncols=self._ncols,
+            figsize_width=self._figsize_width,
+            figsize_height=self._figsize_height,
+            grid_hspace=self._hspace,
+            grid_wspace=self._wspace,
+            width_ratios=self._width_ratios,
         )
         
     def modify_spines(self,
