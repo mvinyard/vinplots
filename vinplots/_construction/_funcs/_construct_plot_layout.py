@@ -47,6 +47,7 @@ def _construct_plot_layout(
     figsize_width=1,
     figsize_height=1,
     grid_hspace=0.2,
+    grid_wspace=0,
     width_ratios=False,
 ):
 
@@ -71,7 +72,7 @@ def _construct_plot_layout(
 
     nrows = _calculate_nrows(nplots, ncols)
     fig = _initialize_plot_with_dimensions(ncols, nrows, figsize_width, figsize_height)
-    gridspec = GridSpec(nrows, ncols, width_ratios=width_ratios, hspace=grid_hspace)
+    gridspec = GridSpec(nrows, ncols, width_ratios=width_ratios, hspace=grid_hspace, wspace=grid_wspace)
 
     plot_count = 0
     AxesDict = {}
