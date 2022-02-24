@@ -22,6 +22,7 @@ class _Plot:
         hspace=0.18,
         wspace=0,
         width_ratios=False,
+        height_ratios=False,
     ):
 
         """
@@ -40,7 +41,7 @@ class _Plot:
         self._ncols = ncols
         
         if figsize:
-            self._figsize_width = self.figsize_height = figsize
+            self._figsize_width = self._figsize_height = figsize
         else:
             self._figsize_width = figsize_width
             self._figsize_height = figsize_height
@@ -48,7 +49,7 @@ class _Plot:
         if width_ratios:
             self._width_ratios = width_ratios
         else:
-            self._width_ratios = np.ones(min(self.nplots, self.ncols))
+            self._width_ratios = np.ones(min(self._nplots, self._ncols))
 
         self.fig, self.AxesDict = _construct_plot_layout(
             nplots=self._nplots,
@@ -58,6 +59,7 @@ class _Plot:
             grid_hspace=self._hspace,
             grid_wspace=self._wspace,
             width_ratios=self._width_ratios,
+            height_ratios=height_ratios,
         )
         
     def modify_spines(self,
