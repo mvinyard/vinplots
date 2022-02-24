@@ -48,7 +48,7 @@ class _Plot:
         if width_ratios:
             self._width_ratios = width_ratios
         else:
-            self._width_ratios = np.ones(min(self.nplots, self.ncols))
+            self._width_ratios = np.ones(min(self._nplots, self._ncols))
 
         self.fig, self.AxesDict = _construct_plot_layout(
             nplots=self._nplots,
