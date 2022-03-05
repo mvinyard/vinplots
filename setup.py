@@ -15,7 +15,7 @@ setup(
         "vinplots",
         "vinplots._color_palettes",
         "vinplots._color_palettes._palettes",
-        "vinplots._construction"
+        "vinplots._construction",
         "vinplots._construction._funcs",
         "vinplots._plot",
         "vinplots._style",
