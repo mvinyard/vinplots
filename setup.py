@@ -13,6 +13,10 @@ setup(
     description="vinplots - plotting assistant",
     packages=[
         "vinplots",
+        "vinplots._color_palettes",
+        "vinplots._construction",
+        "vinplots._plot",
+        "vinplots._style",
     ],
     install_requires=[
         "matplotlib>=3.4",
