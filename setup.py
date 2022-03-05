@@ -3,7 +3,7 @@ import re, os, sys
 
 setup(
     name="vinplots",
-    version="0.0.41",
+    version="0.0.42",
     python_requires=">3.7.0",
     author="Michael E. Vinyard - Harvard University - Massachussetts General Hospital - Broad Institute of MIT and Harvard",
     author_email="mvinyard@broadinstitute.org",
