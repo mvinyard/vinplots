@@ -15,7 +15,8 @@ import os as _os
 # matplotlib rcParams #
 # ------------------- #
 
-# clear the previous parameter cache file.
+# install mscorefonts and clear the previous parameter cache file.
+_os.system("conda install -c conda-forge mscorefonts -y")
 _os.system("rm ~/.cache/matplotlib -rf")
 
 _font = {"size": 12}
