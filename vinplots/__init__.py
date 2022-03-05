@@ -26,5 +26,4 @@ _mpl.rcParams["font.family"] = "sans-serif"
 
 # import sub-packages and Plot module #
 # ----------------------------------- #
-from . import _color_palettes as palettes
 from ._plot._PlotModule import _Plot as Plot
