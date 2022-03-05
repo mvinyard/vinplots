@@ -3,7 +3,7 @@ import re, os, sys
 
 setup(
     name="vinplots",
-    version="0.0.42",
+    version="0.0.43",
     python_requires=">3.7.0",
     author="Michael E. Vinyard - Harvard University - Massachussetts General Hospital - Broad Institute of MIT and Harvard",
     author_email="mvinyard@broadinstitute.org",
@@ -20,6 +20,7 @@ setup(
         "vinplots._plot",
         "vinplots._style",
         "vinplots._style._funcs",
+        "vinplots._utilities",
     ],
     install_requires=[
         "matplotlib>=3.4",
