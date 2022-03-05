@@ -15,11 +15,11 @@ def _download_mscore_fonts():
     
     """"""
     
-    check_package = _subprocess.run(['conda', 'search', 'mscore'], stdout=subprocess.PIPE, stderr=False).stdout.decode().split('\n')
+    check_package = _subprocess.run(['conda', 'search', 'mscore'], stdout=_subprocess.PIPE, stderr=False).stdout.decode().split('\n')
     if len(check_package) > 3:
         return "installed"
     else:
-        download_log = _subprocess.run(['conda', 'install', '-c', 'conda-forge', 'mscorefonts', '-y'], stdout=subprocess.PIPE, stderr=False)
+        download_log = _subprocess.run(['conda', 'install', '-c', 'conda-forge', 'mscorefonts', '-y'], stdout=_subprocess.PIPE, stderr=False)
         return download_log
 
 # matplotlib rcParams #
