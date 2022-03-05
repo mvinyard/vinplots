@@ -24,10 +24,7 @@ _mpl.rcParams["font.sans-serif"] = "Arial"
 _mpl.rcParams["font.family"] = "sans-serif"
 
 
-# import sub-packages #
-# ------------------- #
-from . import _construction as build
+# import sub-packages and Plot module #
+# ----------------------------------- #
 from . import _color_palettes as palettes
-from . import _style as style
-
 from ._plot._PlotModule import _Plot as Plot
