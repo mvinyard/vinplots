@@ -5,4 +5,4 @@
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
 
-Michael E. Vinyard's python plotting assistant
+[Michael Vinyard](https://github.com/mvinyard)'s python plotting assistant
