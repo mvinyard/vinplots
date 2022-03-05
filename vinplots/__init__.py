@@ -9,25 +9,15 @@ __email__ = ", ".join(["vinyard@g.harvard.edu",])
 import matplotlib as _mpl
 import matplotlib.font_manager as _font_manager
 import os as _os
-import subprocess as _subprocess
 
-def _download_mscore_fonts():
-    
-    """"""
-    
-    check_package = _subprocess.run(['conda', 'search', 'mscore'], stdout=_subprocess.PIPE, stderr=False).stdout.decode().split('\n')
-    if len(check_package) > 3:
-        return "installed"
-    else:
-        download_log = _subprocess.run(['conda', 'install', '-c', 'conda-forge', 'mscorefonts', '-y'], stdout=_subprocess.PIPE, stderr=False)
-        return download_log
+from ._utilities._get_mscorefonts import _get_mscorefonts
 
 # matplotlib rcParams #
 # ------------------- #
 
 # install mscorefonts and clear the previous parameter cache file.
-_os.system("conda install -c conda-forge mscorefonts -y")
-_mscore_install = _download_mscore_fonts()
+_os.system("rm ~/.cache/matplotlib -rf")
+_mscore_install = _get_mscorefonts()
 
 _font = {"size": 12}
 _mpl.rc(_font)
