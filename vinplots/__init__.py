@@ -31,3 +31,4 @@ from . import _color_palettes as palettes
 from . import _style as style
 
 from ._plot._PlotModule import _Plot as Plot
+from ._plot._save_figure import _save_figure as save
