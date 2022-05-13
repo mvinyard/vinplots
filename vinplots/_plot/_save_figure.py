@@ -1,5 +1,5 @@
 
-import licorice
+import licorice_font
 import matplotlib.pyplot as plt
 import os
 import pydk
@@ -72,7 +72,7 @@ def _echo(formatted_savename):
 
     print(
         "{}: {}".format(
-            licorice.font_format("Saving figure to", ["BOLD"]), formatted_savename
+            licorice_font.font_format("Saving figure to", ["BOLD"]), formatted_savename
         )
     )
 
