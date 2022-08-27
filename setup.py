@@ -26,6 +26,8 @@ setup(
         "matplotlib>=3.4",
         "numpy>=1.19.2",
         "pandas>=1.1.2",
+        "licorice_font>=0.0.3",
+        "pydk>=0.0.51",
     ],
     classifiers=[
         "Development Status :: 2 - Pre-Alpha",
