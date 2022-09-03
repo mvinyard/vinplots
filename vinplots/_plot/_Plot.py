@@ -1,12 +1,22 @@
 
 
+__module_name__ = "_Plot.py"
+__author__ = ", ".join(["Michael E. Vinyard"])
+__email__ = ", ".join(["vinyard@g.harvard.edu",])
+
+
+# import packages -------------------------------------------------------------
 import numpy as np
 import matplotlib.pyplot as plt
 
-from .._construction._funcs._construct_plot_layout import _construct_plot_layout
-from .._style._funcs._modify_axis_spines import _modify_axis_spines, _modify_all_ax_spines
+
+# import local dependencies ---------------------------------------------------
+from .._construction._construct_plot_layout import _construct_plot_layout
+from .._style._modify_axis_spines import _modify_axis_spines, _modify_all_ax_spines
+from .._construction._linearize_axes import _linearize_axes
 
 
+# main class ------------------------------------------------------------------
 class _Plot:
     def __init__(self, tight=True, grid=True):
 
