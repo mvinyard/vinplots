@@ -1,16 +1,16 @@
 
-# _get_default_matplotlib_figure_width_height.py
-__module_name__ = "_get_default_matplotlib_figure_width_height.py"
+__module_name__ = "_default_matplotlib_fig_dims.py"
 __author__ = ", ".join(["Michael E. Vinyard"])
 __email__ = ", ".join(["vinyard@g.harvard.edu",])
 
 
-# package imports #
-# --------------- #
+# import packages -------------------------------------------------------------
 import matplotlib
 import numpy as np
 
-def _default_matplotlib_figure_dimensions():
+
+# primary function ------------------------------------------------------------
+def _default_matplotlib_fig_dims():
 
     """
     Return default height and width of matplotlib figures.

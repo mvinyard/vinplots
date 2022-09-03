@@ -5,4 +5,4 @@ __email__ = ", ".join(["vinyard@g.harvard.edu",])
 
 
 # -----------------------------------------------------------------------------
-from ._default_matplotlib_fig_dims import _default_matplotlib_fig_dims as default_plt_dims
+from ._setup_matplotlib_params import _setup_matplotlib_params as set_plt_params

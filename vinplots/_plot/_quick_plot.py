@@ -1,6 +1,14 @@
 
-from ._PlotModule import _Plot
+__module_name__ = "_quick_plot.py"
+__author__ = ", ".join(["Michael E. Vinyard"])
+__email__ = ", ".join(["vinyard@g.harvard.edu",])
 
+
+# import local dependencies ---------------------------------------------------
+from ._Plot import _Plot
+
+
+# main function ---------------------------------------------------------------
 def _quick_plot(nplots=1, ncols=1, spines_to_delete=['top', 'right'], rm_ticks=False, **construct_kwargs):
     
     if spines_to_delete == "all":

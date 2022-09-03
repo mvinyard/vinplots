@@ -1,13 +1,26 @@
+
+
+__module_name__ = "_construct_plot_layout.py"
+__author__ = ", ".join(["Michael E. Vinyard"])
+__email__ = ", ".join(["vinyard@g.harvard.edu",])
+
+
+# import packages -------------------------------------------------------------
 from matplotlib.gridspec import GridSpec
 import matplotlib.pyplot as plt
 import numpy as np
 import matplotlib
 import math
 
-from ._default_matplotlib_figure_dimensions import _default_matplotlib_figure_dimensions
 
+# import local dependenceis ---------------------------------------------------
+from ._default_matplotlib_fig_dims import _default_matplotlib_fig_dims
+
+
+# supporting functions --------------------------------------------------------
 def _calculate_nrows(nplots, ncols):
     return math.ceil(nplots / ncols)
+
 
 def _initialize_plot_with_dimensions(ncols, nrows, figsize_width, figsize_height):
 
@@ -36,11 +49,13 @@ def _initialize_plot_with_dimensions(ncols, nrows, figsize_width, figsize_height
     ------
     """
 
-    fig_dimensions = _default_matplotlib_figure_dimensions()*np.array([ncols * figsize_width, nrows * figsize_height])
+    fig_dimensions = _default_matplotlib_fig_dims()*np.array([ncols * figsize_width, nrows * figsize_height])
     fig = plt.figure(figsize=fig_dimensions)
 
     return fig
 
+
+# primary function ------------------------------------------------------------
 def _construct_plot_layout(
     nplots,
     ncols=4,

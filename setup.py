@@ -14,12 +14,10 @@ setup(
     packages=[
         "vinplots",
         "vinplots._color_palettes",
-        "vinplots._color_palettes._palettes",
+        "vinplots._color_palettes._palette_pkl_files",
         "vinplots._construction",
-        "vinplots._construction._funcs",
         "vinplots._plot",
         "vinplots._style",
-        "vinplots._style._funcs",
         "vinplots._utilities",
     ],
     install_requires=[

@@ -1,13 +1,17 @@
 
+__module_name__ = "_save_figure.py"
+__author__ = ", ".join(["Michael E. Vinyard"])
+__email__ = ", ".join(["vinyard@g.harvard.edu",])
+
+
+# import packages -------------------------------------------------------------
 import licorice_font
 import matplotlib.pyplot as plt
 import os
 import pydk
 
 
-### ---------------------------------------------------------------------------------------- ###
-
-
+# supporting functions --------------------------------------------------------
 def _get_file_extension(filename):
     return filename.split(".")[-1]
 
@@ -21,7 +25,6 @@ def _add_default_extension(filename):
 
     return filename
 
-
 def _format_file_extension(filename, extension_list=["png", "svg", "pdf"]):
 
     extension = _get_file_extension(filename)
@@ -29,10 +32,6 @@ def _format_file_extension(filename, extension_list=["png", "svg", "pdf"]):
         return _add_default_extension(filename)
     else:
         return filename
-
-
-### ---------------------------------------------------------------------------------------- ###
-
 
 def _bool_to_str(user_savename):
 
@@ -65,8 +64,6 @@ def _format_figure_file_basename(
         return "saved_plot.{}".format(pydk.time())
 
 
-### ---------------------------------------------------------------------------------------- ###
-
 
 def _echo(formatted_savename):
 
@@ -75,10 +72,6 @@ def _echo(formatted_savename):
             licorice_font.font_format("Saving figure to", ["BOLD"]), formatted_savename
         )
     )
-
-
-### ---------------------------------------------------------------------------------------- ###
-
 
 def _format_figure_savename(
     program_prefix="my_program_prefix",
@@ -95,9 +88,7 @@ def _format_figure_savename(
     return formatted_savename
 
 
-### ---------------------------------------------------------------------------------------- ###
-
-
+# primary function ------------------------------------------------------------
 def _save_figure(
     program_prefix=False,
     user_savename=False,
@@ -107,6 +98,38 @@ def _save_figure(
     dpi=250,
     echo=True,
 ):
+    """
+    program_prefix
+        type: bool or str
+        default: False
+    
+    user_savename
+        type: bool or str
+        default: False
+    
+    outpath
+        type: bool or str
+        default: "./"
+    
+    add_timestamp
+        type: bool
+        default: False
+    
+    extension_list
+        List of acceptable image exensions.
+        type: list
+        default: ["png", "svg", "pdf"]
+    
+    dpi
+        Image resolution.
+        type: int
+        default: 250
+    
+    echo
+        Print the constructed filepath to console.
+        type: bool
+        default: True
+    """
 
     pydk.mkdir_flex(outpath)
 
