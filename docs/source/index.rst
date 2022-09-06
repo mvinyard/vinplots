@@ -19,6 +19,8 @@ Documentation
 ********************
 ``vinplots`` is a python plotting assistant made by and for Michael Vinyard. 
 
+`CNN <http://cnn.com>`_
+
 This packages is used and maintained by _`Michael E. Vinyard<https://www.linkedin.com/in/michaelvinyard/>`_ at Harvard University (research with Gaddy Getz and Luca Pinello at the Broad Institute and MGH). 
 
 If you find this package useful for your own work, please consider reaching out and connecting. 
