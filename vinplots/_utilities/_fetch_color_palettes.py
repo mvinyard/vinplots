@@ -5,32 +5,32 @@ __email__ = ", ".join(["vinyard@g.harvard.edu",])
 
 
 # import packages -------------------------------------------------------------
-import wget as _wget
-import os as _os
-from tqdm import tqdm as _tqdm
-from bs4 import BeautifulSoup as _BS
-import requests as _requests
+import wget
+import os
+from tqdm import tqdm
+from bs4 import BeautifulSoup
+import requests
 
 
 # supporting functions --------------------------------------------------------
 def _list_dir_html(url, ext):
 
-    page = _requests.get(url).text
-    soup = _BS(page, "html.parser")
+    page = requests.get(url).text
+    soup = BeautifulSoup(page, "html.parser")
     return [
-        _os.path.join(url, _os.path.basename(node.get("href")))
+        os.path.join(url, os.path.basename(node.get("href")))
         for node in soup.find_all("a")
         if node.get("href").endswith(ext)
     ]
 
 def _buffered_wget(url, dest):
 
-    if not _os.path.exists(dest):
-        _wget.download(url, dest, bar=False)
+    if not os.path.exists(dest):
+        wget.download(url, dest, bar=False)
 
 def _fetch_color_palettes(url, dest_dir, ext=".pkl"):
-    for f_url in _tqdm(_list_dir_html(url, ext)):
-        f_name = _os.path.basename(f_url)
-        dest_path = _os.path.join(dest_dir, f_name)
+    for f_url in tqdm(_list_dir_html(url, ext)):
+        f_name = os.path.basename(f_url)
+        dest_path = os.path.join(dest_dir, f_name)
         _buffered_wget(f_url, dest_path)
         
