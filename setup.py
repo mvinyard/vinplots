@@ -10,14 +10,7 @@ setuptools.setup(
     long_description=open("README.md", encoding="utf-8").read(),
     long_description_content_type="text/markdown",
     description="vinplots - plotting assistant",
-    packages=[
-        "vinplots",
-        "vinplots._construction",
-        "vinplots._plot",
-        "vinplots._utilities",
-        "vinplots._style",
-        "vinplots._style._src",
-    ],
+    packages=setuptools.find_packages(),
     install_requires=[
         "matplotlib>=3.4",
         "numpy>=1.19.2",
