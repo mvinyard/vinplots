@@ -1,7 +1,6 @@
-from setuptools import setup
-import re, os, sys
+import setuptools, re, os, sys
 
-setup(
+setuptools.setup(
     name="vinplots",
     version="0.0.56",
     python_requires=">3.7.0",
