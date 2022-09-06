@@ -41,12 +41,14 @@ templates_path = ['_templates']
 # This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = []
 
+# Generate the API documentation when building
+autosummary_generate = True
 
 # -- Options for HTML output -------------------------------------------------
 
 html_show_sourcelink = True
 html_theme = 'pydata_sphinx_theme'
-# html_favicon = '../imgs/cell_icon.svg'
+html_favicon = '../imgs/vinplots.logo.svg'
 
 html_context = dict(
     github_user="mvinyard",   # Username
