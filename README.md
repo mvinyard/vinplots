@@ -6,3 +6,24 @@
 
 
 [Michael Vinyard](https://github.com/mvinyard)'s python plotting assistant
+
+### To install (Current release: [`v0.0.60`](https://github.com/mvinyard/vinplots/releases/tag/v0.0.60)):
+
+```BASH
+pip install vinplots
+```
+
+**To install the development version**:
+```BASH
+git clone https://github.com/mvinyard/vinplots.git; cd vinplots
+pip install -e .
+```
+
+### Quickstart
+
+```python
+
+import vinplots
+
+fig, axes = vinplots.quick_plot()
+```
