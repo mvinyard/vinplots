@@ -72,6 +72,10 @@ class _Plot:
             height_ratios=height_ratios,
         )
         
+    def linearize(self):
+        
+        return _linearize_axes(self.AxesDict)
+        
     def modify_spines(self,
                       ax,
                       color=False,

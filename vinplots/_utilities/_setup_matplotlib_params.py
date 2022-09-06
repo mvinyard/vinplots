@@ -11,7 +11,7 @@ import matplotlib
 
 
 # primary function ------------------------------------------------------------
-def _setup_matplotlib_params():
+def _setup_matplotlib_params(return_CLI=False):
     
     """install mscorefonts and clear the previous parameter cache file (should it exist)"""
     
@@ -26,4 +26,5 @@ def _setup_matplotlib_params():
     matplotlib.rcParams["font.sans-serif"] = "Arial"
     matplotlib.rcParams["font.family"] = "sans-serif"
     
-    return CLI
+    if return_CLI:
+        return CLI
