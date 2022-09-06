@@ -28,13 +28,11 @@ This packages is used and maintained by _`Michael E. Vinyard<https://www.linkedi
 
 If you find this package useful for your own work, please consider reaching out and connecting. 
 
-```{eval-rst}
 .. card:: Installation :octicon:`plug;1em;`
     :link: installation
     :link-type: doc
 
     New to using *vinplots*? See the installation guide.
-```
 
 .. toctree::
    :maxdepth: 3
