@@ -17,19 +17,11 @@ vinplots
 
 Documentation
 ********************
-``vinplots`` is a python plotting assistant made by and for Michael Vinyard. 
+``vinplots`` is a python plotting assistant made by me, `Michael Vinyard <https://www.michaelvinyard.com>`. 
 
-`CNN <http://cnn.com>`_
+I'm currently working on my PhD at Harvard University where I am developing methods for the analysis of single-cell genomics data. I also work on methods for CRISPR-Cas9-based genome-editing tools (like base-editing) to study cancer progression. My PhD work is funded by an NIH F31 award through the NCI and focuses on applying innovations in deep learning to analogous problems in the analysis of single-cell data. 
 
-This packages is used and maintained by _`Michael E. Vinyard<https://www.linkedin.com/in/michaelvinyard/>`_ at Harvard University (research with Gaddy Getz and Luca Pinello at the Broad Institute and MGH). 
-
-If you find this package useful for your own work, please consider reaching out and connecting. 
-
-.. card:: Installation :octicon:`plug;1em;`
-    :link: installation
-    :link-type: doc
-
-    New to using *vinplots*? See the installation guide.
+If you find this package useful for your own work, please consider reaching out and connecting through `GitHub <https://github.com/mvinyard>`, `LinkedIn <https://www.linkedin.com/in/michaelvinyard/>`_, or `Twitter <https://twitter.com/vinyard_m>`_. 
 
 .. toctree::
    :maxdepth: 3
