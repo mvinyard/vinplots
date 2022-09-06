@@ -3,7 +3,7 @@ API
 ===
 
 
-To get started with cell-tools::
+To get started with ``vinplots``::
 
    import vinplots
 
@@ -11,7 +11,8 @@ To get started with cell-tools::
 .. toctree::
    :maxdepth: 2
 
-   ATAC
-   RNA
-   IO
-   Multiome
+   Plot
+   Color Palettes
+   Utilities
+   Construction
+   Style
