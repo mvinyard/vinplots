@@ -17,7 +17,7 @@ def _setup_matplotlib_params(return_CLI=False):
     
     CLI = pydk.conda_package_installer("mscorefonts", "conda-forge")
     CLI.conda_list()
-    CLI.check_installation()
+    CLI.install()
 
     _ = os.system("rm -rf ~/.cache/matplotlib")
 
