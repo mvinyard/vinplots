@@ -16,7 +16,7 @@ from ._construction._save_figure import _save_figure as save
 
 # fetch color palettes --------------------------------------------------------
 import os as _os
-from ._utilities import _fetch_color_palettes
+from ._utilities._fetch_color_palettes import _fetch_color_palettes
 from ._color_palettes._ColorPalettes import _ColorPalettes
 
 dest = _os.path.join(__file__, "_color_palettes/_palette_pkl_src/")
