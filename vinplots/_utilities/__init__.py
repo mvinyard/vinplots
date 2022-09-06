@@ -6,3 +6,4 @@ __email__ = ", ".join(["vinyard@g.harvard.edu",])
 
 # -----------------------------------------------------------------------------
 from ._setup_matplotlib_params import _setup_matplotlib_params as set_plt_params
+from ._fetch_color_palettes import _fetch_color_palettes as fetch_color_palettes
