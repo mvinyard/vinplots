@@ -2,7 +2,7 @@ import setuptools, re, os, sys
 
 setuptools.setup(
     name="vinplots",
-    version="0.0.60a",
+    version="0.0.60b",
     python_requires=">3.7.0",
     author="Michael E. Vinyard - Harvard University - Massachussetts General Hospital - Broad Institute of MIT and Harvard",
     author_email="mvinyard@broadinstitute.org",
