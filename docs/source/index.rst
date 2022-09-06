@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-cell-tools
+vinplots
 ======================================
 
 .. toctree::
@@ -24,9 +24,9 @@ Documentation
 ********************
 ``vinplots`` is a python plotting assistant made by and for Michael Vinyard. 
 
-This packages is used and maintained by `Michael E. Vinyard<https://michaelvinyard.com/>` at Harvard University (research with Gaddy Getz and Luca Pinello at the Broad Institute and MGH). 
+This packages is used and maintained by _`Michael E. Vinyard<https://www.linkedin.com/in/michaelvinyard/>`_ at Harvard University (research with Gaddy Getz and Luca Pinello at the Broad Institute and MGH). 
 
-If you find this package useful for your own research, please consider reaching out and connecting. 
+If you find this package useful for your own work, please consider reaching out and connecting. 
 
 .. toctree::
    :maxdepth: 3
