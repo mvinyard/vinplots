@@ -18,7 +18,7 @@ from ._construction._save_figure import _save_figure as save
 import os as _os
 url = "https://github.com/mvinyard/vinplots/raw/main/vinplots/_color_palettes/_palette_pkl_src/"
 
-dest = _os.path.join(__file__, _color_palettes/_palette_pkl_src/)
+dest = _os.path.join(__file__, "_color_palettes/_palette_pkl_src/")
 ut.fetch_color_palettes(url, dest_dir=dest)
 
 from ._color_palettes._ColorPalettes import _ColorPalettes
