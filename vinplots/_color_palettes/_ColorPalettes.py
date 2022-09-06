@@ -24,7 +24,7 @@ PalettePathDict = {
 # supporting function ---------------------------------------------------------
 def _load_palette(key):
     
-    pkl_path = os.path.join("_src", PalettePathDict[key])
+    pkl_path = os.path.join("_palette_pkl_src", PalettePathDict[key])
     fpath = os.path.join(os.path.dirname(__file__), pkl_path)
     
     return pydk.load_pickled(fpath)

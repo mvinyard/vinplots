@@ -16,5 +16,5 @@ from ._plot._quick_plot import _quick_plot as quick_plot
 from ._construction._save_figure import _save_figure as save
 
 # -----------------------------------------------------------------------------
-from ._style._ColorPalettes import _ColorPalettes
+from ._color_palettes._ColorPalettes import _ColorPalettes
 colors = _ColorPalettes()
