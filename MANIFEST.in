@@ -1,1 +1,1 @@
-include _color_palettes/_palette_pkl_src*.pkl
+include _color_palettes/_palette_pkl_src/*.pkl
