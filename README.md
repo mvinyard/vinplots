@@ -27,3 +27,5 @@ import vinplots
 
 fig, axes = vinplots.quick_plot()
 ```
+
+For more documentation, see: [here](https://vinplots.readthedocs.io/en/latest/index.html).
