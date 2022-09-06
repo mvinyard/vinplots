@@ -48,7 +48,7 @@ autosummary_generate = True
 
 html_show_sourcelink = True
 html_theme = 'pydata_sphinx_theme'
-html_favicon = '../imgs/vinplots.logo.svg'
+html_favicon = '../images/vinplots.logo.svg'
 
 html_context = dict(
     github_user="mvinyard",   # Username
@@ -59,7 +59,7 @@ html_context = dict(
 
 # Set link name generated in the top bar.
 html_title = "vinplots"
-html_logo = "../imgs/vinplots.logo.svg"
+html_logo = "../images/vinplots.logo.svg"
 
 html_theme_options = {
     "github_url": "https://github.com/mvinyard/vinplots",
