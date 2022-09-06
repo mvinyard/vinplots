@@ -15,11 +15,6 @@ from ._plot._quick_plot import _quick_plot as quick_plot
 from ._construction._save_figure import _save_figure as save
 
 # fetch color palettes --------------------------------------------------------
-import os as _os
-url = "https://github.com/mvinyard/vinplots/raw/main/vinplots/_color_palettes/_palette_pkl_src/"
-
-dest = _os.path.join(__file__, "_color_palettes/_palette_pkl_src/")
-_utilities.fetch_color_palettes(url, dest_dir=dest)
-
 from ._color_palettes._ColorPalettes import _ColorPalettes
+
 colors = _ColorPalettes()
