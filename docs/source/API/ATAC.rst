@@ -1,24 +1,24 @@
 ====
-ATAC
+Plot
 ====
 
 
 To get started::
 
-   import cell_tools as cell
+   import vinplots
 
 
-.. currentmodule:: cell-tools
+.. currentmodule:: vinplots
 
 
 Functions
 ~~~~~
 
-.. currentmodule:: cell-tools
+.. currentmodule:: vinplots
 
 
 .. autosummary::
    :toctree: reference/
    :nosignatures:
 
-   atac.annotate_peaks
+   vinplots.Plot
