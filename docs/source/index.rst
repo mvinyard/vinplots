@@ -12,11 +12,6 @@ vinplots
 
 .. note::
 
-   Not much here yet...
-
-
-.. note::
-
    This project is under active development.
 
 
