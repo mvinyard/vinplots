@@ -11,6 +11,7 @@ setuptools.setup(
     long_description_content_type="text/markdown",
     description="vinplots - plotting assistant",
     packages=setuptools.find_packages(),
+    include_package_data=True,
     install_requires=[
         "matplotlib>=3.4",
         "numpy>=1.19.2",
