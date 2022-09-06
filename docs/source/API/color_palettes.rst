@@ -1,5 +1,5 @@
 ====
-IO
+Color Palettes
 ====
 
 To get started::
