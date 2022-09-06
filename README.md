@@ -1,4 +1,4 @@
-# ![logo](/docs/images/vinplots.logo.svg)
+<img src="/docs/images/vinplots.logo.svg" alt="/docs/images/vinplots.logo.png">
 
 [![PyPI pyversions](https://img.shields.io/pypi/pyversions/vinplots.svg)](https://pypi.python.org/pypi/vinplots/)
 [![PyPI version](https://badge.fury.io/py/vinplots.svg)](https://badge.fury.io/py/vinplots)
