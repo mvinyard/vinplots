@@ -18,6 +18,7 @@ PalettePathDict = {
     "BuOr": "BuOr_palette.pkl",
     "BlueSand": "BlueSand_palette.pkl",
     "LARRY_in_vitro": "LARRY_in_vitro_palette.pkl",
+    "pbmc3k":"pbmc3k_palette.pkl",
 }
 
 
