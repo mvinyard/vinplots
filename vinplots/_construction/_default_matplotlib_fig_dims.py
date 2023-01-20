@@ -2,7 +2,7 @@
 __module_name__ = "_default_matplotlib_fig_dims.py"
 __author__ = ", ".join(["Michael E. Vinyard"])
 __email__ = ", ".join(["vinyard@g.harvard.edu",])
-__version__ = 0.0.74
+__version__ = "0.0.75"
 
 
 # import packages -------------------------------------------------------------
