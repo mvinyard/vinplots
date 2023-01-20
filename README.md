@@ -7,7 +7,7 @@
 
 [Michael Vinyard](https://github.com/mvinyard)'s python plotting assistant
 
-### To install (Current release: [`v0.0.72`](https://github.com/mvinyard/vinplots/releases/tag/v0.0.60)):
+### To install (Current release: [`v0.0.74`](https://github.com/mvinyard/vinplots/releases/tag/v0.0.74)):
 
 ```BASH
 pip install vinplots
