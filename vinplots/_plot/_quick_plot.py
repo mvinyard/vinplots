@@ -2,6 +2,7 @@
 __module_name__ = "_quick_plot.py"
 __author__ = ", ".join(["Michael E. Vinyard"])
 __email__ = ", ".join(["vinyard@g.harvard.edu",])
+__version__ = 0.0.74
 
 
 # import local dependencies ---------------------------------------------------
