@@ -6,7 +6,7 @@ __email__ = ", ".join(["vinyard@g.harvard.edu",])
 
 # import packages -------------------------------------------------------------
 import os
-import pydk
+# import pydk
 import matplotlib as mpl
 import numpy as np
 
@@ -28,7 +28,7 @@ def _load_palette(key):
     pkl_path = os.path.join("_palette_pkl_src", PalettePathDict[key])
     fpath = os.path.join(os.path.dirname(__file__), pkl_path)
     
-    return pydk.load_pickled(fpath)
+#    return pydk.load_pickled(fpath)
 
 
 # main class ------------------------------------------------------------------

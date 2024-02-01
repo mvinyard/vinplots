@@ -6,7 +6,7 @@ __email__ = ", ".join(["vinyard@g.harvard.edu",])
 
 # import packages -------------------------------------------------------------
 import os
-import pydk
+# import pydk
 import matplotlib
 
 
